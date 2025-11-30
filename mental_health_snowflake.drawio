@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="SnowflakeSchema">
+    <mxGraphModel>
+      <root>
+        <mxCell id="fact" value="Fact_Mental_Health_Survey" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1">
+          <mxGeometry x="400" y="200" width="160" height="80" as_="geometry"/>
+        </mxCell>
+        <mxCell id="time" value="Dim_Time" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1">
+          <mxGeometry x="100" y="50" width="160" height="80" as_="geometry"/>
+        </mxCell>
+        <mxCell id="demo" value="Dim_Demographics" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1">
+          <mxGeometry x="100" y="350" width="160" height="80" as_="geometry"/>
+        </mxCell>
+        <mxCell id="acad" value="Dim_Academic" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1">
+          <mxGeometry x="700" y="50" width="160" height="80" as_="geometry"/>
+        </mxCell>
+        <mxCell id="life" value="Dim_Lifestyle_Behavioral" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1">
+          <mxGeometry x="700" y="350" width="160" height="80" as_="geometry"/>
+        </mxCell>
+        <mxCell id="support" value="Dim_Support_Systems" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1">
+          <mxGeometry x="400" y="50" width="160" height="80" as_="geometry"/>
+        </mxCell>
+        <mxCell id="work" value="Dim_Work_Environment" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1">
+          <mxGeometry x="400" y="350" width="160" height="80" as_="geometry"/>
+        </mxCell>
+        <mxCell id="e1" style="endArrow=block;html=1;" edge="1" source="time" target="fact">
+          <mxGeometry relative="1" as_="geometry"/>
+        </mxCell>
+        <mxCell id="e2" style="endArrow=block;html=1;" edge="1" source="demo" target="fact">
+          <mxGeometry relative="1" as_="geometry"/>
+        </mxCell>
+        <mxCell id="e3" style="endArrow=block;html=1;" edge="1" source="acad" target="fact">
+          <mxGeometry relative="1" as_="geometry"/>
+        </mxCell>
+        <mxCell id="e4" style="endArrow=block;html=1;" edge="1" source="life" target="fact">
+          <mxGeometry relative="1" as_="geometry"/>
+        </mxCell>
+        <mxCell id="e5" style="endArrow=block;html=1;" edge="1" source="support" target="fact">
+          <mxGeometry relative="1" as_="geometry"/>
+        </mxCell>
+        <mxCell id="e6" style="endArrow=block;html=1;" edge="1" source="work" target="fact">
+          <mxGeometry relative="1" as_="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
